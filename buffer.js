@@ -5,6 +5,10 @@ console.log(buf2.toJSON());
 
 var buf3 = new Buffer(256);
 len = buf3.write("冯帆");
-console.log('写入缓冲区的字节数为：'+len);
+// console.log('写入缓冲区的字节数为：'+len);
+// console.log(buf3.toString());
 
-console.log(buf3.toString());
+var buf4 = new Buffer('hello world');
+var buf5 = new Buffer(' www.fanfan.com');
+var buf6 = Buffer.concat([buf4,buf5]);
+console.log(buf6.toString())

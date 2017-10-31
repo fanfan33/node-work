@@ -8,3 +8,8 @@ fs.readFile('input.txt',function(err,data){
     console.log(data.toString());
     console.log("程序结束")
 })
+
+var Hello = require('./module');
+var hello  = new Hello();
+hello.setName('fanfan33');
+console.log(hello.getName());
